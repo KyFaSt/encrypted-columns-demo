@@ -10,7 +10,7 @@ module Encryption
 
       def decrypt(previous_data, key_provider: default_key_provider, cipher_options: {})
         # NEVER DO THIS -- THIS IS FOR DEMONSTRATION PURPOSES ONLY
-        Rails.logger.info "decrypting #{previous_data}"
+        Rails.logger.info "decrypting..."
         super(previous_data, key_provider: key_provider, cipher_options: cipher_options)
       end
   end
